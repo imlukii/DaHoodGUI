@@ -1,0 +1,1184 @@
+-- Ban script by luki#8505
+
+-- Instances:
+
+local GUITemplate = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
+local Hide = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local SideBar = Instance.new("ScrollingFrame")
+local Home = Instance.new("TextButton")
+local ListLayout = Instance.new("UIListLayout")
+local Hub = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Pages = Instance.new("Frame")
+local Home_2 = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Hub_2 = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local PlayerBox = Instance.new("TextBox")
+local RequireID = Instance.new("TextBox")
+local ExecuteOrder77 = Instance.new("TextButton")
+local ExecuteOrder88 = Instance.new("TextButton")
+local R6 = Instance.new("TextButton")
+local R15 = Instance.new("TextButton")
+local Settings_2 = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local CheckBox1 = Instance.new("ImageButton")
+local Label = Instance.new("TextLabel")
+local CheckBox2 = Instance.new("ImageButton")
+local Label_2 = Instance.new("TextLabel")
+local ColorFrame = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Mult = Instance.new("ImageButton")
+local Frame_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local CurrentColor = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local CheckBox3 = Instance.new("ImageButton")
+local Label_3 = Instance.new("TextLabel")
+local CheckBox4 = Instance.new("ImageButton")
+local Label_4 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+GUITemplate.Name = "GUITemplate"
+GUITemplate.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUITemplate.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GUITemplate.DisplayOrder = 999999999
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = GUITemplate
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainFrame.BorderColor3 = Color3.fromRGB(255, 0, 4)
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Position = UDim2.new(0.0863204077, 0, 0.378881991, 0)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 312, 0, 208)
+MainFrame.ZIndex = 999999998
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BackgroundTransparency = 0.450
+TopBar.BorderColor3 = Color3.fromRGB(255, 0, 4)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(-0.000217975714, 0, -0.000925724336, 0)
+TopBar.Size = UDim2.new(1.00021803, 0, 0.138999999, 0)
+TopBar.SizeConstraint = Enum.SizeConstraint.RelativeXX
+TopBar.ZIndex = 999999999
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.187179476, 0, 0.0961531103, 0)
+Title.Size = UDim2.new(0.700000167, 0, 0.80769223, 0)
+Title.ZIndex = 999999999
+Title.Font = Enum.Font.SourceSansLight
+Title.Text = "GUI Template"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Logo.Name = "Logo"
+Logo.Parent = TopBar
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0320512839, 0, 0, 0)
+Logo.Size = UDim2.new(0.132692307, 0, 1, 0)
+Logo.ZIndex = 999999999
+Logo.Image = "rbxassetid://1290407164"
+
+Exit.Name = "Exit"
+Exit.Parent = TopBar
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 0.900
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.906853557, 0, 0.254250169, 0)
+Exit.Size = UDim2.new(0, 20, 0, 20)
+Exit.ZIndex = 999999999
+Exit.Font = Enum.Font.Ubuntu
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+Hide.Name = "Hide"
+Hide.Parent = TopBar
+Hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide.BackgroundTransparency = 0.900
+Hide.BorderSizePixel = 0
+Hide.Position = UDim2.new(0.820333958, 0, 0.254250169, 0)
+Hide.Size = UDim2.new(0, 20, 0, 20)
+Hide.ZIndex = 999999999
+Hide.Font = Enum.Font.Ubuntu
+Hide.Text = "–"
+Hide.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hide.TextScaled = true
+Hide.TextSize = 14.000
+Hide.TextWrapped = true
+
+UICorner.Parent = TopBar
+
+SideBar.Name = "SideBar"
+SideBar.Parent = MainFrame
+SideBar.Active = true
+SideBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SideBar.BackgroundTransparency = 1.000
+SideBar.BorderSizePixel = 0
+SideBar.Position = UDim2.new(0, 0, 0.197115391, 0)
+SideBar.Size = UDim2.new(0.144230768, 0, 0.802884519, 0)
+SideBar.ZIndex = 999999998
+SideBar.ScrollBarThickness = 6
+
+Home.Name = "Home"
+Home.Parent = SideBar
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 38, 0, 38)
+Home.ZIndex = 999999998
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 13.000
+Home.TextWrapped = true
+
+ListLayout.Name = "ListLayout"
+ListLayout.Parent = SideBar
+ListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Hub.Name = "Hub"
+Hub.Parent = SideBar
+Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BackgroundTransparency = 1.000
+Hub.BorderSizePixel = 0
+Hub.Size = UDim2.new(0, 38, 0, 38)
+Hub.ZIndex = 999999998
+Hub.Font = Enum.Font.SourceSans
+Hub.Text = "Hub"
+Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hub.TextSize = 13.000
+Hub.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = SideBar
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderSizePixel = 0
+Settings.Size = UDim2.new(0, 38, 0, 38)
+Settings.ZIndex = 999999998
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 13.000
+Settings.TextWrapped = true
+
+Pages.Name = "Pages"
+Pages.Parent = MainFrame
+Pages.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Pages.BackgroundTransparency = 0.900
+Pages.BorderSizePixel = 0
+Pages.ClipsDescendants = true
+Pages.Position = UDim2.new(0.144230768, 0, 0.199074239, 0)
+Pages.Size = UDim2.new(0, 265, 0, 166)
+Pages.ZIndex = 999999998
+
+Home_2.Name = "Home"
+Home_2.Parent = Pages
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BackgroundTransparency = 1.000
+Home_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BorderSizePixel = 0
+Home_2.Size = UDim2.new(1, 0, 1, 0)
+Home_2.ZIndex = 999999998
+
+Title_2.Name = "Title"
+Title_2.Parent = Home_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Size = UDim2.new(0, 258, 0, 29)
+Title_2.ZIndex = 999999998
+Title_2.Font = Enum.Font.SourceSansLight
+Title_2.Text = "Ban GUI lol"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Home_2
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.176347435, 0, 0.132530123, 0)
+Credits.Size = UDim2.new(0, 211, 0, 15)
+Credits.ZIndex = 999999998
+Credits.Font = Enum.Font.SourceSansLight
+Credits.Text = "Banned by: Luki"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Hub_2.Name = "Hub"
+Hub_2.Parent = Pages
+Hub_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub_2.BackgroundTransparency = 1.000
+Hub_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hub_2.BorderSizePixel = 0
+Hub_2.Size = UDim2.new(1, 0, 1, 0)
+Hub_2.Visible = false
+Hub_2.ZIndex = 999999998
+
+Title_3.Name = "Title"
+Title_3.Parent = Hub_2
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Size = UDim2.new(0, 190, 0, 29)
+Title_3.ZIndex = 999999998
+Title_3.Font = Enum.Font.SourceSansLight
+Title_3.Text = "Server Hub Example"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+ScrollingFrame.Parent = Hub_2
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.1746988, 0)
+ScrollingFrame.Size = UDim2.new(0, 266, 0, 137)
+ScrollingFrame.ZIndex = 999999998
+ScrollingFrame.ScrollBarThickness = 6
+
+PlayerBox.Name = "PlayerBox"
+PlayerBox.Parent = ScrollingFrame
+PlayerBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerBox.BackgroundTransparency = 0.950
+PlayerBox.BorderSizePixel = 0
+PlayerBox.Position = UDim2.new(0.0114200599, 0, -1.86264515e-09, 0)
+PlayerBox.Size = UDim2.new(0, 248, 0, 22)
+PlayerBox.ZIndex = 999999998
+PlayerBox.Font = Enum.Font.SourceSans
+PlayerBox.PlaceholderText = "example playername textbox"
+PlayerBox.Text = ""
+PlayerBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerBox.TextScaled = true
+PlayerBox.TextSize = 14.000
+PlayerBox.TextWrapped = true
+
+RequireID.Name = "RequireID"
+RequireID.Parent = ScrollingFrame
+RequireID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RequireID.BackgroundTransparency = 0.950
+RequireID.BorderSizePixel = 0
+RequireID.Position = UDim2.new(0.0109999999, 0, 0.0726385564, 0)
+RequireID.Size = UDim2.new(0, 188, 0, 22)
+RequireID.ZIndex = 999999998
+RequireID.ClearTextOnFocus = false
+RequireID.Font = Enum.Font.SourceSans
+RequireID.PlaceholderText = "enter require id here"
+RequireID.Text = ""
+RequireID.TextColor3 = Color3.fromRGB(255, 255, 255)
+RequireID.TextScaled = true
+RequireID.TextSize = 14.000
+RequireID.TextWrapped = true
+
+ExecuteOrder77.Name = "ExecuteOrder77"
+ExecuteOrder77.Parent = RequireID
+ExecuteOrder77.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteOrder77.BackgroundTransparency = 0.950
+ExecuteOrder77.BorderSizePixel = 0
+ExecuteOrder77.Position = UDim2.new(1.03723407, 0, 0, 0)
+ExecuteOrder77.Size = UDim2.new(0, 52, 0, 22)
+ExecuteOrder77.ZIndex = 999999999
+ExecuteOrder77.Font = Enum.Font.SourceSans
+ExecuteOrder77.Text = "run"
+ExecuteOrder77.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteOrder77.TextScaled = true
+ExecuteOrder77.TextSize = 14.000
+ExecuteOrder77.TextWrapped = true
+
+ExecuteOrder88.Name = "ExecuteOrder88"
+ExecuteOrder88.Parent = ScrollingFrame
+ExecuteOrder88.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteOrder88.BackgroundTransparency = 0.950
+ExecuteOrder88.BorderSizePixel = 0
+ExecuteOrder88.Position = UDim2.new(0.0109999999, 0, 0.150000006, 0)
+ExecuteOrder88.Size = UDim2.new(0, 247, 0, 22)
+ExecuteOrder88.ZIndex = 999999998
+ExecuteOrder88.Font = Enum.Font.SourceSans
+ExecuteOrder88.Text = "example execute server code"
+ExecuteOrder88.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteOrder88.TextScaled = true
+ExecuteOrder88.TextSize = 14.000
+ExecuteOrder88.TextWrapped = true
+
+R6.Name = "R6"
+R6.Parent = Hub_2
+R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6.BackgroundTransparency = 0.950
+R6.BorderSizePixel = 0
+R6.Position = UDim2.new(0.860618234, 0, 0.0180722885, 0)
+R6.Size = UDim2.new(0, 21, 0, 22)
+R6.ZIndex = 999999998
+R6.Font = Enum.Font.SourceSans
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(255, 255, 255)
+R6.TextScaled = true
+R6.TextSize = 14.000
+R6.TextWrapped = true
+
+R15.Name = "R15"
+R15.Parent = Hub_2
+R15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R15.BackgroundTransparency = 0.950
+R15.BorderSizePixel = 0
+R15.Position = UDim2.new(0.769999981, 0, 0.0180722885, 0)
+R15.Size = UDim2.new(0, 21, 0, 22)
+R15.ZIndex = 999999998
+R15.Font = Enum.Font.SourceSans
+R15.Text = "R15"
+R15.TextColor3 = Color3.fromRGB(255, 255, 255)
+R15.TextScaled = true
+R15.TextSize = 14.000
+R15.TextWrapped = true
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Pages
+Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BackgroundTransparency = 1.000
+Settings_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BorderSizePixel = 0
+Settings_2.Size = UDim2.new(1, 0, 1, 0)
+Settings_2.Visible = false
+Settings_2.ZIndex = 999999998
+
+Title_4.Name = "Title"
+Title_4.Parent = Settings_2
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Size = UDim2.new(0, 266, 0, 21)
+Title_4.ZIndex = 999999998
+Title_4.Font = Enum.Font.SourceSansLight
+Title_4.Text = "Settings"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+CheckBox1.Name = "CheckBox1"
+CheckBox1.Parent = Settings_2
+CheckBox1.BackgroundColor3 = Color3.fromRGB(87, 83, 91)
+CheckBox1.Position = UDim2.new(0.023894228, 0, 0.123050191, 0)
+CheckBox1.Size = UDim2.new(0, 20, 0, 20)
+CheckBox1.ZIndex = 999999998
+CheckBox1.Style = Enum.ButtonStyle.RobloxRoundButton
+CheckBox1.Image = "rbxassetid://0"
+
+Label.Name = "Label"
+Label.Parent = CheckBox1
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.Position = UDim2.new(8.50663757, 0, -7.35772896, 0)
+Label.Size = UDim2.new(0, 130, 0, 24)
+Label.ZIndex = 999999998
+Label.Font = Enum.Font.SourceSansLight
+Label.Text = "Custom Colour"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextSize = 20.000
+Label.TextWrapped = true
+Label.TextXAlignment = Enum.TextXAlignment.Left
+
+CheckBox2.Name = "CheckBox2"
+CheckBox2.Parent = Settings_2
+CheckBox2.BackgroundColor3 = Color3.fromRGB(87, 83, 91)
+CheckBox2.Position = UDim2.new(0.023894228, 0, 0.833893597, 0)
+CheckBox2.Size = UDim2.new(0, 20, 0, 20)
+CheckBox2.ZIndex = 999999998
+CheckBox2.Style = Enum.ButtonStyle.RobloxRoundButton
+
+Label_2.Name = "Label"
+Label_2.Parent = CheckBox2
+Label_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_2.BackgroundTransparency = 1.000
+Label_2.Position = UDim2.new(8.50663757, 0, -7.35772896, 0)
+Label_2.Size = UDim2.new(0, 130, 0, 24)
+Label_2.ZIndex = 999999998
+Label_2.Font = Enum.Font.SourceSansLight
+Label_2.Text = "RGB Colour"
+Label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_2.TextSize = 20.000
+Label_2.TextWrapped = true
+Label_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ColorFrame.Name = "ColorFrame"
+ColorFrame.Parent = Settings_2
+ColorFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ColorFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColorFrame.BackgroundTransparency = 1.000
+ColorFrame.Position = UDim2.new(0.379999995, 0, 0.54213649, 0)
+ColorFrame.Size = UDim2.new(0.576894999, 0, 0.583514035, 0)
+ColorFrame.ZIndex = 999999998
+
+ImageButton.Parent = ColorFrame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.0996442735, 0, -0.00497324206, 0)
+ImageButton.Size = UDim2.new(0.600000024, 0, 1, 0)
+ImageButton.ZIndex = 999999998
+ImageButton.Image = "rbxassetid://2499070690"
+
+Frame.Parent = ImageButton
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 4
+Frame.Position = UDim2.new(0.5, 0, 1, 0)
+Frame.Selectable = true
+Frame.ZIndex = 999999998
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = ImageButton
+
+Mult.Name = "Mult"
+Mult.Parent = ColorFrame
+Mult.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mult.BorderSizePixel = 0
+Mult.ClipsDescendants = true
+Mult.Position = UDim2.new(-0.00146244839, 0, -0.00307180732, 0)
+Mult.Size = UDim2.new(0.0921568647, 0, 1.00303948, 0)
+Mult.ZIndex = 999999998
+Mult.Image = "rbxassetid://2499075935"
+
+Frame_2.Parent = Mult
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 2
+Frame_2.Position = UDim2.new(0, 0, 0.760999978, 0)
+Frame_2.Size = UDim2.new(1.5, 0, 0.00100000005, 0)
+Frame_2.ZIndex = 999999998
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = Mult
+
+CurrentColor.Name = "CurrentColor"
+CurrentColor.Parent = ColorFrame
+CurrentColor.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CurrentColor.Position = UDim2.new(0.717647076, 0, -0.00607902743, 0)
+CurrentColor.Size = UDim2.new(0.300000012, 0, 0.297872335, 0)
+CurrentColor.Visible = false
+CurrentColor.ZIndex = 999999998
+
+UICorner_4.CornerRadius = UDim.new(0.5, 0)
+UICorner_4.Parent = CurrentColor
+
+CheckBox3.Name = "CheckBox3"
+CheckBox3.Parent = Settings_2
+CheckBox3.BackgroundColor3 = Color3.fromRGB(87, 83, 91)
+CheckBox3.Position = UDim2.new(0.529999971, 0, 0.123050213, 0)
+CheckBox3.Size = UDim2.new(0, 20, 0, 20)
+CheckBox3.ZIndex = 999999998
+CheckBox3.Style = Enum.ButtonStyle.RobloxRoundButton
+CheckBox3.Image = "rbxassetid://33714981"
+
+Label_3.Name = "Label"
+Label_3.Parent = CheckBox3
+Label_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_3.BackgroundTransparency = 1.000
+Label_3.Position = UDim2.new(8.50663757, 0, -7.35772896, 0)
+Label_3.Size = UDim2.new(0, 130, 0, 24)
+Label_3.ZIndex = 999999998
+Label_3.Font = Enum.Font.SourceSansLight
+Label_3.Text = "Default Colour"
+Label_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_3.TextSize = 20.000
+Label_3.TextWrapped = true
+Label_3.TextXAlignment = Enum.TextXAlignment.Left
+
+CheckBox4.Name = "CheckBox4"
+CheckBox4.Parent = Settings_2
+CheckBox4.BackgroundColor3 = Color3.fromRGB(87, 83, 91)
+CheckBox4.Position = UDim2.new(0.529999971, 0, 0.279676735, 0)
+CheckBox4.Size = UDim2.new(0, 20, 0, 20)
+CheckBox4.ZIndex = 999999998
+CheckBox4.Style = Enum.ButtonStyle.RobloxRoundButton
+CheckBox4.Image = "rbxassetid://33714981"
+
+Label_4.Name = "Label"
+Label_4.Parent = CheckBox4
+Label_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_4.BackgroundTransparency = 1.000
+Label_4.Position = UDim2.new(8.50663757, 0, -7.35772896, 0)
+Label_4.Size = UDim2.new(0, 130, 0, 24)
+Label_4.ZIndex = 999999998
+Label_4.Font = Enum.Font.SourceSansLight
+Label_4.Text = "UI Corners"
+Label_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_4.TextSize = 20.000
+Label_4.TextWrapped = true
+Label_4.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_5.Parent = MainFrame
+
+-- Scripts:
+
+local function HAPR_fake_script() -- Exit.Order66 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		-- no references IN this code... try looking in the script attributes ;)
+		local v = script.Parent.Parent.Parent
+		local newPos = UDim2.new(0,0,-1,0)
+		local Play = v:TweenPosition(
+			newPos,
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Sine,
+			2,
+			true
+		)
+		wait(2)
+		v.Parent:Destroy()
+	end)
+	-- ok i lied heres a reference: MAAAAAAAAAAAAMMA MAAAAAAMA MAMAMAMAMAMAM HOYUAUHAHAHAHUAHFIUOAHWIHI HMNANANANAMAMMA MAMAMAMMAMAMAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+end
+coroutine.wrap(HAPR_fake_script)()
+local function OJASWKI_fake_script() -- Hide.ALittleBitOf____MixedWithSome____ ______ 
+	local script = Instance.new('LocalScript', Hide)
+
+	-- so many references hidden here! catch em' all! ;)
+	local toggled = false
+	local beingUsed = false
+	--local v = "vandetta" -- v for vandetta reference?!?!?
+	local v = script.Parent.Parent.Parent
+	local function tweenSize(udim2)
+		local Play = v:TweenSize(
+			udim2
+		)
+	end
+	script.Parent.MouseButton1Down:Connect(function()
+		if beingUsed == false then
+			beingUsed = true
+			-- ROBLOX PZL PLZZZ PLZZZ ADD SWITCH CASES :sob::sob: :cry:
+			if toggled == false then
+				--print('close gui')
+				script.Parent.Text = "+"-- iii cant decide
+				tweenSize(UDim2.new(0, 312,0, 44))
+				wait(0.55)
+				v.Pages.Position =   UDim2.new(0.144, 0, -10000.199, -10000)
+				v.SideBar.Position = UDim2.new(0, 0, -10000.197, -10000)
+				toggled = true
+			else
+				--print('open gui')
+				script.Parent.Text = '–'-- wether to use ' or "!
+				tweenSize(UDim2.new(0, 312, 0, 208)) -- udim2 more like unity2
+				v.Pages.Position =   UDim2.new(0.144, 0, 0.199, 0)
+				v.SideBar.Position = UDim2.new(0, 0, 0.197, 0)
+				toggled = false
+				wait(1)
+			end
+			beingUsed = false
+		end
+	end)
+	-- so many references LOL
+	-- im just bored :/ writing this has been short but coming up with these has been shorter
+	-- heres a secret for reading this: i rickrolled roblox staff before
+	-- rip erik cassel
+	
+	-- open the settings tab and click the rgb button for a cooler experience!
+end
+coroutine.wrap(OJASWKI_fake_script)()
+local function BDTC_fake_script() -- Home.TextSet 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.Text = script.Parent.Name
+end
+coroutine.wrap(BDTC_fake_script)()
+local function WGJRXJK_fake_script() -- Hub.TextSet 
+	local script = Instance.new('LocalScript', Hub)
+
+	script.Parent.Text = script.Parent.Name
+end
+coroutine.wrap(WGJRXJK_fake_script)()
+local function HYUUHU_fake_script() -- Settings.TextSet 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.Text = script.Parent.Name
+end
+coroutine.wrap(HYUUHU_fake_script)()
+local function IVOPB_fake_script() -- ExecuteOrder77.Client 
+	local script = Instance.new('LocalScript', ExecuteOrder77)
+
+	local function getPlr(plr,args)																									--[[
+		GetPlayer function by hovacmc
+		(Last updated 4:24PM 24/09/2020)
+		Args: (LocalPlayerName, PlayerNamesString)
+		Call: getPlr(..., ...)
+		
+		Selectables:
+		  - all/@v/@a/@e/everyone/@everyone :: Returns all players
+		  - others/other/@c/@here           :: Returns other players
+		  - me/@p/@s                        :: Returns executor
+		  - random/rnd/@r/@random           :: Returns random player
+		  - team-{teamname}                 :: Returns members of a team
+		  ~ Username/Short name             ;; Returns user whos name starts with that
+		
+		Features:
+		  - Ability to us "all", "others", "random", and more.
+		  - Support for Minecraft command args "@p", "@a", etc...
+		  - Ability to select teams, example: "team-green"
+		  - Comma seperating support, example: "random,me,Player2,Player3"	  														]]
+		local function fixTable(tableg) if table.getn(tableg) == 0 then return { nil } else return { unpack(tableg) } end end
+		local function getVPlr(sc,sv,x,args,exp) for i,v in ipairs(exp) do if (sc[x] and sv[x] and args:sub(sc[x],sv[x]) == v) or (sc[x] and args:sub(sc[x]) == v) then return true end end end
+		local sPlr = {} local aPlrs = { }; local oPlrs = { }; local args = tostring(args:lower())
+		local plrS = game:GetService("Players"); local plr = plrS:FindFirstChild(plr)
+		for idx, val in pairs(plrS:GetPlayers()) do table.insert(aPlrs,val) end
+		for idx, val in pairs(plrS:GetPlayers()) do if not val.Name == plr.Name then table.insert(oPlrs,val) end end
+		local function getTeams() local tsPlrs = {}; for i,v in pairs(game:GetService("Teams"):GetChildren()) do if v:IsA("Team") then table.insert(tsPlrs,v) end end return tsPlrs end
+		--// Returns giving back large chunks of a server:
+		if args == "all" or args == "@v" or args == "@a" or args == "@e" or args == "everyone" or args == "@everyone" then sPlr = aPlrs
+		elseif args == "others" or args == "other" or args == "@c" or args == "@here" then sPlr = oPlrs else
+			--// Returns giving back smaller values: (seperatable by commas)
+			local sc = {1}; local sv = {}; for idx = 1, #args do if args:sub(idx,idx) == "," then table.insert(sc, idx+1) table.insert(sv,idx-1) end end
+			local nrPlrs = {}	
+			for x = 1, #sc do
+				if (getVPlr(sc,sv,x,args,{"me", "@p", "@s"}) == true) then table.insert(nrPlrs, plr)
+				elseif (getVPlr(sc,sv,x,args,{"random", "rnd", "@r", "@random"}) == true) then table.insert(nrPlrs, plrS:GetPlayers()[math.random(#aPlrs)])
+				elseif (sc[x] and args:sub(sc[x]):sub(1,4):lower() == "team") then for i,v in pairs(getTeams()) do if args:sub(sc[x],sv[x]):sub(6) ~= "" and v.Name:lower():find(args:sub(sc[x],sv[x]):sub(6)) == 1 then 
+							for q,p in pairs(plrS:GetPlayers()) do if p.TeamColor == v.TeamColor then table.insert(nrPlrs, p) end end end; end
+					--// Username getter:	
+				else for a, rPlrs in pairs(plrS:GetPlayers()) do 
+						if (sc[x] and sv[x] and args:sub(sc[x],sv[x]) ~= "" and rPlrs.Name:lower():find(args:sub(sc[x],sv[x])) == 1) or (sc[x]
+							and args:sub(sc[x]) ~= "" and rPlrs.Name:lower():find(args:sub(sc[x])) == 1) or (args ~= "" and rPlrs.Name:lower():find(args) == 1) then 
+							table.insert(nrPlrs, rPlrs) end; end
+				end; end; sPlr = nrPlrs; end; return fixTable(sPlr) end
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Replicator:FireServer(tonumber(script.Parent.Parent.Text), getPlr(game:GetService("Players").LocalPlayer.Name,script.Parent.Parent.Parent.PlayerBox.Text))
+	end)
+end
+coroutine.wrap(IVOPB_fake_script)()
+local function VFLM_fake_script() -- ExecuteOrder88.Client 
+	local script = Instance.new('LocalScript', ExecuteOrder88)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Replicator:FireServer()
+	end)
+end
+coroutine.wrap(VFLM_fake_script)()
+local function AZQNJFA_fake_script() -- R6.Client 
+	local script = Instance.new('LocalScript', R6)
+
+	local function getPlr(plr,args)																									--[[
+		GetPlayer function by hovacmc
+		(Last updated 4:24PM 24/09/2020)
+		Args: (LocalPlayerName, PlayerNamesString)
+		Call: getPlr(..., ...)
+		
+		Selectables:
+		  - all/@v/@a/@e/everyone/@everyone :: Returns all players
+		  - others/other/@c/@here           :: Returns other players
+		  - me/@p/@s                        :: Returns executor
+		  - random/rnd/@r/@random           :: Returns random player
+		  - team-{teamname}                 :: Returns members of a team
+		  ~ Username/Short name             ;; Returns user whos name starts with that
+		
+		Features:
+		  - Ability to us "all", "others", "random", and more.
+		  - Support for Minecraft command args "@p", "@a", etc...
+		  - Ability to select teams, example: "team-green"
+		  - Comma seperating support, example: "random,me,Player2,Player3"	  														]]
+		local function fixTable(tableg) if table.getn(tableg) == 0 then return { nil } else return { unpack(tableg) } end end
+		local function getVPlr(sc,sv,x,args,exp) for i,v in ipairs(exp) do if (sc[x] and sv[x] and args:sub(sc[x],sv[x]) == v) or (sc[x] and args:sub(sc[x]) == v) then return true end end end
+		local sPlr = {} local aPlrs = { }; local oPlrs = { }; local args = tostring(args:lower())
+		local plrS = game:GetService("Players"); local plr = plrS:FindFirstChild(plr)
+		for idx, val in pairs(plrS:GetPlayers()) do table.insert(aPlrs,val) end
+		for idx, val in pairs(plrS:GetPlayers()) do if not val.Name == plr.Name then table.insert(oPlrs,val) end end
+		local function getTeams() local tsPlrs = {}; for i,v in pairs(game:GetService("Teams"):GetChildren()) do if v:IsA("Team") then table.insert(tsPlrs,v) end end return tsPlrs end
+		--// Returns giving back large chunks of a server:
+		if args == "all" or args == "@v" or args == "@a" or args == "@e" or args == "everyone" or args == "@everyone" then sPlr = aPlrs
+		elseif args == "others" or args == "other" or args == "@c" or args == "@here" then sPlr = oPlrs else
+			--// Returns giving back smaller values: (seperatable by commas)
+			local sc = {1}; local sv = {}; for idx = 1, #args do if args:sub(idx,idx) == "," then table.insert(sc, idx+1) table.insert(sv,idx-1) end end
+			local nrPlrs = {}	
+			for x = 1, #sc do
+				if (getVPlr(sc,sv,x,args,{"me", "@p", "@s"}) == true) then table.insert(nrPlrs, plr)
+				elseif (getVPlr(sc,sv,x,args,{"random", "rnd", "@r", "@random"}) == true) then table.insert(nrPlrs, plrS:GetPlayers()[math.random(#aPlrs)])
+				elseif (sc[x] and args:sub(sc[x]):sub(1,4):lower() == "team") then for i,v in pairs(getTeams()) do if args:sub(sc[x],sv[x]):sub(6) ~= "" and v.Name:lower():find(args:sub(sc[x],sv[x]):sub(6)) == 1 then 
+							for q,p in pairs(plrS:GetPlayers()) do if p.TeamColor == v.TeamColor then table.insert(nrPlrs, p) end end end; end
+					--// Username getter:	
+				else for a, rPlrs in pairs(plrS:GetPlayers()) do 
+						if (sc[x] and sv[x] and args:sub(sc[x],sv[x]) ~= "" and rPlrs.Name:lower():find(args:sub(sc[x],sv[x])) == 1) or (sc[x]
+							and args:sub(sc[x]) ~= "" and rPlrs.Name:lower():find(args:sub(sc[x])) == 1) or (args ~= "" and rPlrs.Name:lower():find(args) == 1) then 
+							table.insert(nrPlrs, rPlrs) end; end
+				end; end; sPlr = nrPlrs; end; return fixTable(sPlr) end
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Replicator:FireServer(5956499110, getPlr(game:GetService("Players").LocalPlayer.Name,script.Parent.Parent.ScrollingFrame.PlayerBox.Text))
+	end)
+end
+coroutine.wrap(AZQNJFA_fake_script)()
+local function ZPLVNZT_fake_script() -- R15.Client 
+	local script = Instance.new('LocalScript', R15)
+
+	local function getPlr(plr,args)																									--[[
+		GetPlayer function by hovacmc
+		(Last updated 4:24PM 24/09/2020)
+		Args: (LocalPlayerName, PlayerNamesString)
+		Call: getPlr(..., ...)
+		
+		Selectables:
+		  - all/@v/@a/@e/everyone/@everyone :: Returns all players
+		  - others/other/@c/@here           :: Returns other players
+		  - me/@p/@s                        :: Returns executor
+		  - random/rnd/@r/@random           :: Returns random player
+		  - team-{teamname}                 :: Returns members of a team
+		  ~ Username/Short name             ;; Returns user whos name starts with that
+		
+		Features:
+		  - Ability to us "all", "others", "random", and more.
+		  - Support for Minecraft command args "@p", "@a", etc...
+		  - Ability to select teams, example: "team-green"
+		  - Comma seperating support, example: "random,me,Player2,Player3"	  														]]
+		local function fixTable(tableg) if table.getn(tableg) == 0 then return { nil } else return { unpack(tableg) } end end
+		local function getVPlr(sc,sv,x,args,exp) for i,v in ipairs(exp) do if (sc[x] and sv[x] and args:sub(sc[x],sv[x]) == v) or (sc[x] and args:sub(sc[x]) == v) then return true end end end
+		local sPlr = {} local aPlrs = { }; local oPlrs = { }; local args = tostring(args:lower())
+		local plrS = game:GetService("Players"); local plr = plrS:FindFirstChild(plr)
+		for idx, val in pairs(plrS:GetPlayers()) do table.insert(aPlrs,val) end
+		for idx, val in pairs(plrS:GetPlayers()) do if not val.Name == plr.Name then table.insert(oPlrs,val) end end
+		local function getTeams() local tsPlrs = {}; for i,v in pairs(game:GetService("Teams"):GetChildren()) do if v:IsA("Team") then table.insert(tsPlrs,v) end end return tsPlrs end
+		--// Returns giving back large chunks of a server:
+		if args == "all" or args == "@v" or args == "@a" or args == "@e" or args == "everyone" or args == "@everyone" then sPlr = aPlrs
+		elseif args == "others" or args == "other" or args == "@c" or args == "@here" then sPlr = oPlrs else
+			--// Returns giving back smaller values: (seperatable by commas)
+			local sc = {1}; local sv = {}; for idx = 1, #args do if args:sub(idx,idx) == "," then table.insert(sc, idx+1) table.insert(sv,idx-1) end end
+			local nrPlrs = {}	
+			for x = 1, #sc do
+				if (getVPlr(sc,sv,x,args,{"me", "@p", "@s"}) == true) then table.insert(nrPlrs, plr)
+				elseif (getVPlr(sc,sv,x,args,{"random", "rnd", "@r", "@random"}) == true) then table.insert(nrPlrs, plrS:GetPlayers()[math.random(#aPlrs)])
+				elseif (sc[x] and args:sub(sc[x]):sub(1,4):lower() == "team") then for i,v in pairs(getTeams()) do if args:sub(sc[x],sv[x]):sub(6) ~= "" and v.Name:lower():find(args:sub(sc[x],sv[x]):sub(6)) == 1 then 
+							for q,p in pairs(plrS:GetPlayers()) do if p.TeamColor == v.TeamColor then table.insert(nrPlrs, p) end end end; end
+					--// Username getter:	
+				else for a, rPlrs in pairs(plrS:GetPlayers()) do 
+						if (sc[x] and sv[x] and args:sub(sc[x],sv[x]) ~= "" and rPlrs.Name:lower():find(args:sub(sc[x],sv[x])) == 1) or (sc[x]
+							and args:sub(sc[x]) ~= "" and rPlrs.Name:lower():find(args:sub(sc[x])) == 1) or (args ~= "" and rPlrs.Name:lower():find(args) == 1) then 
+							table.insert(nrPlrs, rPlrs) end; end
+				end; end; sPlr = nrPlrs; end; return fixTable(sPlr) end
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Replicator:FireServer(6684434459, getPlr(game:GetService("Players").LocalPlayer.Name,script.Parent.Parent.ScrollingFrame.PlayerBox.Text))
+	end)
+end
+coroutine.wrap(ZPLVNZT_fake_script)()
+local function AZBJYA_fake_script() -- CheckBox1.LocalScript 
+	local script = Instance.new('LocalScript', CheckBox1)
+
+	checked = "http://www.roblox.com/asset/?id=33714981"
+	unchecked = "http://www.roblox.com/asset/?id=0"
+	checkValue = script.Parent["Checked"]
+	script.Parent.MouseButton1Down:Connect(function()
+		if checkValue.Value then
+			checkValue.Value = false
+			script.Parent.Image = unchecked
+			script.Parent.Parent.CheckBox2.Checked.Value = false
+			script.Parent.Parent.CheckBox3.Checked.Value = true
+		else
+			checkValue.Value = true
+			script.Parent.Image = checked
+			script.Parent.Parent.CheckBox2.Checked.Value = false
+			script.Parent.Parent.CheckBox3.Checked.Value = false
+		end
+	end)
+	script.Parent.Checked.Changed:Connect(function()
+		if checkValue.Value then
+			script.Parent.Image = checked
+		else
+			script.Parent.Image = unchecked
+		end
+	end)
+end
+coroutine.wrap(AZBJYA_fake_script)()
+local function MSEO_fake_script() -- CheckBox2.LocalScript 
+	local script = Instance.new('LocalScript', CheckBox2)
+
+	checked = "http://www.roblox.com/asset/?id=33714981"
+	unchecked = "http://www.roblox.com/asset/?id=0"
+	checkValue = script.Parent["Checked"]
+	script.Parent.MouseButton1Down:Connect(function()
+		if checkValue.Value then
+			checkValue.Value = false
+			script.Parent.Image = unchecked
+			script.Parent.Parent.CheckBox1.Checked.Value = false
+			script.Parent.Parent.CheckBox3.Checked.Value = true
+		else
+			checkValue.Value = true
+			script.Parent.Image = checked
+			script.Parent.Parent.CheckBox1.Checked.Value = false
+			script.Parent.Parent.CheckBox3.Checked.Value = false
+		end
+	end)
+	script.Parent.Checked.Changed:Connect(function()
+		if checkValue.Value then
+			script.Parent.Image = checked
+		else
+			script.Parent.Image = unchecked
+		end
+	end)
+end
+coroutine.wrap(MSEO_fake_script)()
+local function QLALY_fake_script() -- Settings_2.ColourManager 
+	local script = Instance.new('LocalScript', Settings_2)
+
+	local Custom = script.Parent.CheckBox1
+	local RGB = script.Parent.CheckBox2
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	counter = 0
+	while wait(0.1)do
+		if (RGB.Checked.Value == true) then
+			script.Parent.Parent.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+			counter = counter + 0.01
+		elseif (Custom.Checked.Value == true) then
+			counter = 0
+			script.Parent.Parent.Parent.BackgroundColor3 = script.Parent.ColorFrame.CurrentColor.BackgroundColor3
+		else
+			counter = 0
+			script.Parent.Parent.Parent.BackgroundColor3 = script.Parent.Parent.Parent.Parent.DefaultColour.Value
+		end
+	end
+end
+coroutine.wrap(QLALY_fake_script)()
+local function IKYNJ_fake_script() -- ColorFrame.LocalScript 
+	local script = Instance.new('LocalScript', ColorFrame)
+
+	local Players = game:GetService("Players");local Player = Players.LocalPlayer;local Mouse = Player:GetMouse();local SG = script.Parent;local But = script.Parent.ImageButton;local Scale = 255;local Parts = 6;local R = 255;local G = 0;local B = 0;local Rx = 255;local Gx = 0;local Bx = 0;local Ry = 255;local Gy = 0;local By = 0;local Mult = script.Parent.Mult;local Current = script.Parent.CurrentColor;
+	local function Color()
+		local X = math.ceil((Mouse.X-But.AbsolutePosition.X)/But.AbsoluteSize.X*Scale*Parts)
+		local PosX = (Mouse.X-But.AbsolutePosition.X)/But.AbsoluteSize.X
+		if X < 0 then
+			X = 0
+		elseif X > Scale*6 then
+			X = Scale*6
+		end
+		if X <= Scale then
+			Rx = Scale
+			Gx = 0
+			Bx = X
+		elseif X <= Scale*2 then
+			Rx = Scale*2-X
+			Gx = 0
+			Bx = Scale
+		elseif X <= Scale*3 then
+			Rx = 0
+			Gx = X-Scale*2
+			Bx = Scale
+		elseif X <= Scale*4 then
+			Rx = 0
+			Gx = Scale
+			Bx = Scale*4-X
+		elseif X <= Scale*5 then
+			Rx = X-Scale*4
+			Gx = Scale
+			Bx = 0
+		elseif X <= Scale*6 then
+			Rx = Scale
+			Gx = Scale*6-X
+			Bx = 0
+		end
+		local Y = math.ceil((Mouse.Y-But.AbsolutePosition.Y)/But.AbsoluteSize.Y*Scale)
+		local PosY = (Mouse.Y-But.AbsolutePosition.Y)/But.AbsoluteSize.Y
+		if Y < 0 then
+			Y = 0
+		elseif Y > Scale then
+			Y = Scale
+		end
+		Ry = Rx+math.ceil(Y/Scale*(Scale-Rx))
+		Gy = Gx+math.ceil(Y/Scale*(Scale-Gx))
+		By = Bx+math.ceil(Y/Scale*(Scale-Bx))
+		R = math.ceil(Ry*(1-Mult.Frame.Position.Y.Scale))
+		G = math.ceil(Gy*(1-Mult.Frame.Position.Y.Scale))
+		B = math.ceil(By*(1-Mult.Frame.Position.Y.Scale))
+		if PosX < 0 then
+			PosX = 0
+		elseif PosX > 1 then
+			PosX = 1
+		end
+		if PosY < 0 then
+			PosY = 0
+		elseif PosY > 1 then
+			PosY = 1
+		end
+		Current.BackgroundColor3 = Color3.fromRGB(R, G, B)
+		script.Parent.ColorChanged:Fire(Color3.fromRGB(R,G,B))
+	end;
+	local MouseMove;
+	local MouseRoll;
+	But.MouseButton1Down:Connect(function()
+		Color()
+		MouseMove = Mouse.Move:Connect(function()
+			Color()
+		end)
+	end);
+	Mult.MouseButton1Down:Connect(function()
+		local Y = (Mouse.Y-But.AbsolutePosition.Y)/But.AbsoluteSize.Y
+		if Y < 0 then
+			Y = 0
+		elseif Y > 1 then
+			Y = 1
+		end
+		Mult.Frame.Position = UDim2.new(0,0,Y,0)
+		R = math.ceil(Ry*(1-Mult.Frame.Position.Y.Scale))
+		G = math.ceil(Gy*(1-Mult.Frame.Position.Y.Scale))
+		B = math.ceil(By*(1-Mult.Frame.Position.Y.Scale))
+		Current.BackgroundColor3 = Color3.fromRGB(R, G, B)
+		MouseRoll = Mouse.Move:Connect(function()
+		local Y = (Mouse.Y-But.AbsolutePosition.Y)/But.AbsoluteSize.Y
+		if Y < 0 then
+			Y = 0
+		elseif Y > 1 then
+			Y = 1
+		end
+		Mult.Frame.Position = UDim2.new(0,0,Y,0)
+		R = math.ceil(Ry*(1-Mult.Frame.Position.Y.Scale))
+		G = math.ceil(Gy*(1-Mult.Frame.Position.Y.Scale))
+		B = math.ceil(By*(1-Mult.Frame.Position.Y.Scale))
+		Current.BackgroundColor3 = Color3.fromRGB(R, G, B)
+		script.Parent.ColorChanged:Fire(Color3.fromRGB(R,G,B))
+		end)
+		
+	end);
+	Mult.MouseButton1Up:Connect(function()
+		if MouseRoll ~= nil then
+			MouseRoll:Disconnect()
+		end
+		if MouseMove ~= nil then
+			MouseMove:Disconnect()
+		end
+	end);
+	But.MouseButton1Up:Connect(function()
+		if MouseRoll ~= nil then
+			MouseRoll:Disconnect()
+		end
+		if MouseMove ~= nil then
+			MouseMove:Disconnect()
+		end
+	end);
+	Mouse.Button1Up:Connect(function()
+		if MouseRoll ~= nil then
+			MouseRoll:Disconnect()
+		end
+		if MouseMove ~= nil then
+			MouseMove:Disconnect()
+		end
+	end);
+	But.MouseLeave:Connect(function()
+		if MouseRoll ~= nil then
+			MouseRoll:Disconnect()
+		end
+		if MouseMove ~= nil then
+			MouseMove:Disconnect()
+		end
+	end)
+	Mult.MouseLeave:Connect(function()
+		if MouseRoll ~= nil then
+			MouseRoll:Disconnect()
+		end
+		if MouseMove ~= nil then
+			MouseMove:Disconnect()
+		end
+	end)
+end
+coroutine.wrap(IKYNJ_fake_script)()
+local function LAGTR_fake_script() -- CheckBox3.LocalScript 
+	local script = Instance.new('LocalScript', CheckBox3)
+
+	checked = "http://www.roblox.com/asset/?id=33714981"
+	unchecked = "http://www.roblox.com/asset/?id=0"
+	checkValue = script.Parent["Checked"]
+	script.Parent.MouseButton1Down:Connect(function()
+		if checkValue.Value then
+			checkValue.Value = false
+			script.Parent.Image = unchecked
+			script.Parent.Parent.CheckBox2.Checked.Value = false
+			script.Parent.Parent.CheckBox1.Checked.Value = true
+		else
+			checkValue.Value = true
+			script.Parent.Image = checked
+			script.Parent.Parent.CheckBox1.Checked.Value = false
+			script.Parent.Parent.CheckBox2.Checked.Value = false
+		end
+	end)
+	script.Parent.Checked.Changed:Connect(function()
+		if checkValue.Value then
+			script.Parent.Image = checked
+		else
+			script.Parent.Image = unchecked
+		end
+	end)
+end
+coroutine.wrap(LAGTR_fake_script)()
+local function XHQS_fake_script() -- CheckBox4.LocalScript 
+	local script = Instance.new('LocalScript', CheckBox4)
+
+	checked = "http://www.roblox.com/asset/?id=33714981"
+	unchecked = "http://www.roblox.com/asset/?id=0"
+	checkValue = script.Parent["Checked"]
+	script.Parent.MouseButton1Down:Connect(function()
+		if checkValue.Value then
+			checkValue.Value = false
+			script.Parent.Image = unchecked
+			script.Parent.Parent.Parent.Parent.UICorner:Destroy()
+			script.Parent.Parent.Parent.Parent.TopBar.UICorner:Destroy()
+		else
+			checkValue.Value = true
+			script.Parent.Image = checked
+			Instance.new("UICorner",script.Parent.Parent.Parent.Parent)
+			Instance.new("UICorner",script.Parent.Parent.Parent.Parent.TopBar)
+		end
+	end)
+	script.Parent.Checked.Changed:Connect(function()
+		if checkValue.Value then
+			script.Parent.Image = checked
+		else
+			script.Parent.Image = unchecked
+		end
+	end)
+end
+coroutine.wrap(XHQS_fake_script)()
+local function KDYHTVB_fake_script() -- MainFrame.PageManager 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	--[[----------------------------
+	
+	Page Manager created by hovacmc
+		Version: 1b
+		Updated: 2021.04.14:4.36
+	
+	]]------------------------------
+	--[[ VARIABLES ]]--
+	local pg = script.Parent.Pages
+	local sb = script.Parent.SideBar
+	--------------------------------
+	--[[ FUNCTIONS ]]--
+	local function closePages()
+		for i,v in pairs(sb:GetChildren()) do
+			if v:IsA('TextButton') then
+				v.Open.Value = false;end
+		end
+		for i,v in pairs(pg:GetChildren()) do
+			v.Visible = true
+			local newPos = UDim2.new(0,0,-1,0)
+			local Play = v:TweenPosition(
+				newPos,
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Sine,
+				2,
+				true
+			)
+		end
+	end
+	local function quickClosePages()
+		for i,v in pairs(sb:GetChildren()) do
+			if v:IsA('TextButton') then
+				v.Open.Value = false;end
+		end
+		for i,v in pairs(pg:GetChildren()) do
+			v.Visible = true
+			local newPos = UDim2.new(0,0,-1,0)
+			v.Position = newPos
+		end
+	end
+	local function openPage(v)
+		closePages()
+		v.Visible = true
+		sb:FindFirstChild(v.Name).Open.Value = false
+		local newPos = UDim2.new(0,0,0,0)
+		local Play = v:TweenPosition(
+			newPos,
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Sine,
+			2,
+			true
+		)
+	end
+	--------------------------------
+	--[[ PAGE MANAGER ]]--
+	for i,v in pairs(sb:GetChildren()) do
+		if v:IsA('TextButton') then
+			v.Open.Value = false
+			v.Visible = true
+			v.MouseButton1Down:Connect(function()
+				openPage(pg:FindFirstChild(v.Name))
+			end)end
+	end
+	--------------------------------
+	quickClosePages()
+	openPage(pg:FindFirstChild('Home'))
+end
+coroutine.wrap(KDYHTVB_fake_script)()
+local function TAVRPC_fake_script() -- MainFrame.DragScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	--Credits go to whoever made this script.
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	drag(script.Parent)
+	
+end
+coroutine.wrap(TAVRPC_fake_script)()
